@@ -1,0 +1,54 @@
+site_name: My Docs
+repo_url: https://github.com/squidfunk/mkdocs-material
+repo_name: Oyin
+copyright: Copyright &copy; 2016 - 2020 Martin Donath
+
+
+
+theme:
+  name: material
+  custom_dir: overrides
+  palette: 
+    scheme: default
+    primary: teal
+    accent: pink
+  font:
+    text: Inter
+    code: Roboto Mono
+  features:
+    - navigation.instant
+    - navigation.tracking
+    - navigation.tabs
+    - navigation.tabs.sticky
+    - navigation.expand
+    - navigation.top
+    - toc.integrate
+    - search.suggest
+
+nav:
+  - Home : index.md
+  - Bio : about.md
+  - Projects : projects.md
+  - Contributions:
+    - How to Contribute: contributions.md
+
+
+plugins:
+  - search
+  # - git-revision-date
+
+
+
+extra:
+  alternate:
+    - name: English
+      link: /en/ 
+      lang: en
+    - name: Deutsch
+      link: /de/
+      lang: de
+  social:
+    - icon: fontawesome/brands/twitter 
+      link: https://twitter.com/squidfunk
+  version:
+    provider: mike
