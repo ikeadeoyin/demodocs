@@ -1,10 +1,10 @@
 name: ci 
 on:
   release:
-    branches:
-      - master 
-      - main
+    tags:
+      - 'v*.*.*'
     types: [published]
+    
 jobs:
   deploy:
     runs-on: ubuntu-latest
