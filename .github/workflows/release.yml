@@ -1,4 +1,4 @@
-name: ci 
+name: CI to set new docs release as latest version
 on:
   release:
     tags:
@@ -21,7 +21,7 @@ jobs:
         run: |
           git config --global user.name Docs deploy
           git config --global user.email docs@dummy.bot.com
-      - name: Publish new doc version and set it as latest
+      - name: Set new doc version as latest
         run:  mike alias -b gh-pages --update-aliases ${{ github.event.release.tag_name }} latest --push
       - name: Change default latest version
         run:  mike set-default latest --push

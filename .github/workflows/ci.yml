@@ -1,4 +1,4 @@
-name: ci 
+name: CI to update tags with changes 
 on:
   push:
     tags:
