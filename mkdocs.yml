@@ -35,6 +35,7 @@ nav:
 
 plugins:
   - search
+  - mike
   # - git-revision-date
 
 
