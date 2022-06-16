@@ -23,7 +23,7 @@ jobs:
           git config --global user.email docs@dummy.bot.com
       - name: Get the version
         id: get_version
-        run: echo ::set-output name=VERSION::${GITHUB_REF/refs\/tags\//}
+        run: echo ::set-output name=VERSION::$(echo $GITHUB_REF | cut -d / -f 3)
       - name: Update the latest doc version
         run:  mike deploy ${{ steps.get_version.outputs.VERSION }} -b gh-pages --push
 
