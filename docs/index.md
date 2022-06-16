@@ -1,4 +1,4 @@
-# Welcome to Demodocs Local Website
+# Welcome to Demodocs Website
 
 For full documentation visit [mkdocs.org](https://www.mkdocs.org).
 
